@@ -7,12 +7,13 @@ use fvm_ipld_blockstore::MemoryBlockstore;
 use fvm_ipld_encoding::tuple::*;
 use fvm_shared::address::Address;
 use fvm_shared::bigint::BigInt;
+use std::str::FromStr;
 use std::env;
 use fvm::machine::Machine;
 use fvm_ipld_blockstore::Blockstore;
 
 const WASM_COMPILED_PATH: &str =
-    "../fil-lottery-actor.wasm";
+    "../../build/fil-lottery-actor.wasm";
 
 // The state object
 #[derive(Serialize_tuple, Deserialize_tuple, Clone, Debug, Default)]
@@ -21,7 +22,7 @@ pub struct State {
 }
 
 fn main() {
-    println!("Testing ERC20 actor in assembly script");
+    println!("Testing lottery actor in assembly script");
 
     let mut tester = Tester::new(
         NetworkVersion::V16,
@@ -62,10 +63,15 @@ fn main() {
 
     println!("Calling `register`");
 
+    let value = BigInt::from_str("1000").unwrap();
+
+    println!("{}", value);
+
     let message = Message {
         from: sender[0].1,
         to: actor_address,
         gas_limit: 1000000000,
+        value,
         method_num: 2,
         ..Message::default()
     };

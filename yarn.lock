@@ -7,10 +7,10 @@
   resolved "https://verdaccio.zondax.net/@zondax%2fassemblyscript-cbor/-/assemblyscript-cbor-0.5.1.tgz#9c24068c510b665f32bd107af9f748680d8d419f"
   integrity sha512-k0iuZCMcEOk0oildpPTHL1ioudryO8rr6FDTu24it63QLc8jwKIvCIoOkwCYG8ChZRbJNiU3N5C4Pq1aaQcpFA==
 
-"@zondax/fvm-as-bindgen@^0.9.1":
-  version "0.9.1"
-  resolved "https://verdaccio.zondax.net/@zondax%2ffvm-as-bindgen/-/fvm-as-bindgen-0.9.1.tgz#adb995d5e7913c6b8e98ce2cfeb4b5edc17c2cf0"
-  integrity sha512-tMkOV0Z5m5zWy1tE6vGvgjULob7rLTf+ckRSnIjpS+s/WNqH18+njUHDsJAa0yxSfVTLFQb0JSzUU7LxEHSTug==
+"@zondax/fvm-as-bindgen@^0.9.2":
+  version "0.9.2"
+  resolved "https://verdaccio.zondax.net/@zondax%2ffvm-as-bindgen/-/fvm-as-bindgen-0.9.2.tgz#0b33a84812938d1f6a4ac7e82e84fcaedf2efa65"
+  integrity sha512-EzQ+/iOZCHqkHTdvJqTDp8OCXkHhjg4aZ2QVnzeXStoikn9L2Q1vq2Sjcacli0AKkUVMuCq5xDNHsiukOGuIvg==
   dependencies:
     assemblyscript "^0.20.11"
 
@@ -26,6 +26,11 @@ as-bigint@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/as-bigint/-/as-bigint-0.5.3.tgz#a0647d0b7ce835077aca33115e71eb26a83df8be"
   integrity sha512-tg9iTO/vPeovOM5CSk1WxYcsfBd/cd3twhBW5PrpcGUfiSEXlPB69eOxFKvSbZnpuDxBAyQ4YBgEkfnYL89Czw==
+
+as-bignum@^0.2.18:
+  version "0.2.18"
+  resolved "https://registry.yarnpkg.com/as-bignum/-/as-bignum-0.2.18.tgz#61ed4dd07d4a62107bde227fdb4370190217bf0b"
+  integrity sha512-5LODrOr7wvS643oh7PHfyRtbBO9vCcU69vNNvrqh5yovrApM9nRHDeT5XcqnaSI8TqK9ZhN12qhZnq4rdIGcwQ==
 
 assemblyscript@^0.20.11:
   version "0.20.13"
