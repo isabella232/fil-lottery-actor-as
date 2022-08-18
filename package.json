@@ -7,8 +7,10 @@
     "asbuild": "asc assembly/index.ts --target release --use abort= --transform @zondax/fvm-as-bindgen"
   },
   "dependencies": {
-    "@zondax/assemblyscript-cbor": "^0.5.1",
-    "@zondax/fvm-as-sdk": "^0.6.2",
+    "@zondax/assemblyscript-cbor": "^1.0.0",
+    "@zondax/filecoin-signing-tools": "^1.0.1",
+    "@zondax/fvm-as-bindgen": "^1.0.0",
+    "@zondax/fvm-as-sdk": "^1.0.0",
     "as-bignum": "^0.2.18"
   },
   "homepage": "https://github.com/Zondax/fil-fns-actror-as#readme",
@@ -18,7 +20,6 @@
   },
   "private": true,
   "devDependencies": {
-    "@zondax/fvm-as-bindgen": "^0.9.2",
     "assemblyscript": "^0.20.11"
   }
 }
